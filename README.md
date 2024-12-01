@@ -10,7 +10,11 @@ I solely use Neovim for work and personal projects, it feels almost wrong that I
 
 Advent of Code is largely unrelated to both lua and neovim, but by solving each day's challenge in Advent of Code with Lua, I will grow to learn Lua.
 
-This is not "PURE LUA", this is "Solving the challenge the best I possibly can given everything I can do with Lua." That might mean using `ripgrep` within Lua, for example, as it is much faster than what Lua could do. This is for many reasons, one of them being simply that ripgrep is made in a compiled language (Rust) whereas Lua is an interpreted language.
+This is not "PURE LUA", this is "Solving the challenge the best I possibly can given everything I can do with Lua." That might mean, for example, using `ripgrep` within Lua, as it is much faster than what Lua could do.
+
+**Q.** In your example, why is running `ripgrep` inherently better than creating a `ripgrep` equivalent in lua? Is this just a way of getting out of creating that logic yourself?
+
+**A.** There are a few reasons why running `ripgrep` is faster than running even the most optimized Lua-equivalent code, but the dominant reason being that ripgrep is made in a compiled language (Rust) whereas Lua is an interpreted language. Me not having to recreate the wheel is also a huge plus.
 
 ## Dependencies
 
